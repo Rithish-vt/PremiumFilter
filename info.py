@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('1285641', ''))
+API_HASH = environ.get('087fb7f4ceaf9a9babe8c2c27bbfc0e9', '')
+BOT_TOKEN = environ.get('6918852123:AAG3H9K2qGafrD8oVMSiR3A4ywA_vu3Bm_o', '')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
@@ -31,8 +31,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('mongodb+srv://rithishvt0513:32uPOkuSkQtknvXg@autofilterpremium.ise5cx1.mongodb.net/?retryWrites=true&w=majority', "")
+DATABASE_NAME = environ.get('rithishvt0513', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
